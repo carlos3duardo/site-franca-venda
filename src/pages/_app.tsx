@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { ChakraProvider } from '@chakra-ui/react';
 
 import theme from '../styles/themes/default';
+import ViewBreakpoint from '../components/Layout/ViewBreakpoint';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>Franca Venda</title>
       </Head>
       <Component {...pageProps} />
+      <ViewBreakpoint />
     </ChakraProvider>
   );
 }
