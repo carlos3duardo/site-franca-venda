@@ -1,12 +1,12 @@
-import { chakra, Image, Show } from '@chakra-ui/react';
+import { chakra, Show } from '@chakra-ui/react';
 
-const mobileImage = '/images/destaque-mobile-01-plataforma.png';
-const desktopImage = '/images/destaque-desktop-01-plataforma.png';
+import mobileImage from './assets/destaque-mobile-01-plataforma.png';
+import desktopImage from './assets/destaque-desktop-01-plataforma.png';
 
 export default function BannerPlataforma(): JSX.Element {
   return (
     <chakra.div>
-      <chakra.a href="/#opa">
+      <chakra.a href="/">
         <Show above="md">
           <chakra.img src={desktopImage} width="100%" />
         </Show>
