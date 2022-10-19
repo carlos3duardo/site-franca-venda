@@ -18,7 +18,7 @@ export default function DesktopNav({ navItems }: DesktopNavProps): JSX.Element {
       role="menu"
       listStyleType="none"
       margin="0"
-      display="flex"
+      display={{ base: 'none', lg: 'flex' }}
       flexDirection="row"
     >
       {navItems.map(navItem => (
