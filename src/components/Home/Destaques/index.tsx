@@ -4,7 +4,7 @@
 import { chakra } from '@chakra-ui/react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import { Pagination, Navigation } from 'swiper';
+import { Autoplay, Pagination, Navigation } from 'swiper';
 
 import BannerPlataforma from './BannerPlataforma';
 import BannerPlanoDeNegocio from './BannerPlanoDeNegocio';
@@ -53,14 +53,14 @@ export default function Destaques(): JSX.Element {
           prevEl: `${styles.swiperButtonPrev}`,
           nextEl: `${styles.swiperButtonNext}`,
         }}
-        modules={destaques.length > 1 ? [Pagination, Navigation] : []}
+        modules={destaques.length > 1 ? [Autoplay, Pagination, Navigation] : []}
         pagination={{
           clickable: true,
           bulletClass: `${styles.swiperPaginationBullet}`,
           bulletActiveClass: `${styles.swiperPaginationBulletActive}`,
         }}
         loop={destaques.length > 1}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
       >
         {destaques.length <= 1 || (
           <>
