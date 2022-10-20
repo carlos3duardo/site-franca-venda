@@ -8,9 +8,9 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Header />
-      {/* <Destaques /> */}
-      {/* <QuemSomos /> */}
-      {/* <NossosProdutos /> */}
+      <Destaques />
+      <QuemSomos />
+      <NossosProdutos />
       <EscritoriVirtual />
     </>
   );

@@ -10,6 +10,7 @@ export default function NossosProdutos(): JSX.Element {
       display="flex"
       flexDirection="column"
       backgroundColor="white"
+      padding="2rem 0"
     >
       <Heading
         as="h2"
@@ -18,7 +19,7 @@ export default function NossosProdutos(): JSX.Element {
         fontWeight="800"
         color="primary.500"
         textAlign="center"
-        padding="4rem 0 2rem 0"
+        padding="2rem 0 2rem 0"
       >
         Conheça os nossos produtos
       </Heading>
