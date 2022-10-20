@@ -25,12 +25,12 @@ function NavigationButton({ menuToggle }: NavigationButtonProps) {
   );
 }
 
-interface MobileNavProps {
+interface NavigationMenuProps {
   navItems: NavItemProps[];
   menuToggle: () => void;
 }
 
-function NavigationMenu({ navItems, menuToggle }: MobileNavProps) {
+function NavigationMenu({ navItems, menuToggle }: NavigationMenuProps) {
   return (
     <chakra.div
       position="fixed"
@@ -66,6 +66,10 @@ function NavigationMenu({ navItems, menuToggle }: MobileNavProps) {
       </chakra.ul>
     </chakra.div>
   );
+}
+
+interface MobileNavProps {
+  navItems: NavItemProps[];
 }
 
 export default function MobileNav({ navItems }: MobileNavProps): JSX.Element {
