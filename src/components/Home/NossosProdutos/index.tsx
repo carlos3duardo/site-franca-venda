@@ -1,6 +1,5 @@
-import { chakra, Flex, Heading, Text } from '@chakra-ui/react';
+import { chakra, Heading } from '@chakra-ui/react';
 
-import planoVipClinico from './assets/produto-plano-vip-clinico.png';
 import MercadoOdontologico from './components/MercadoOdontologico';
 import PlanoVipClinico from './components/PlanoVipClinico';
 import PlanoVipOrtodontico from './components/PlanoVipOrtodontico';

@@ -2,6 +2,7 @@ import Header from '../components/Layout/Header';
 import Destaques from '../components/Home/Destaques';
 import QuemSomos from '../components/Home/QuemSomos';
 import NossosProdutos from '../components/Home/NossosProdutos';
+import EscritoriVirtual from '../components/Home/EscritorioVirtual';
 
 export default function Home(): JSX.Element {
   return (
@@ -9,7 +10,8 @@ export default function Home(): JSX.Element {
       <Header />
       {/* <Destaques /> */}
       {/* <QuemSomos /> */}
-      <NossosProdutos />
+      {/* <NossosProdutos /> */}
+      <EscritoriVirtual />
     </>
   );
 }
