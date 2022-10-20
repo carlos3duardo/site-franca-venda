@@ -61,7 +61,7 @@ export default function QuemSomos(): JSX.Element {
         <chakra.div position="relative">
           <Heading
             as="h2"
-            fontSize="2rem"
+            fontSize="2.5rem"
             textTransform="uppercase"
             fontWeight="800"
             color="primary.500"
