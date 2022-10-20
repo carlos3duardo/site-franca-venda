@@ -15,7 +15,7 @@ const theme = {
   },
   fonts: {
     body: 'Inter, Helvetica, Arial, sans-serif',
-    heading: 'Inter, Helvetica, Arial, sans-serif',
+    heading: 'Kontora, Helvetica, Arial, sans-serif',
     mono: 'monospace',
   },
   fontWeights: {
@@ -26,16 +26,16 @@ const theme = {
   },
   colors: {
     primary: {
-      50: '#C9DEEE',
-      100: '#AECDE5',
-      200: '#93BCDC',
-      300: '#78ACD3',
-      400: '#5D9BCB',
-      500: '#428ac2',
-      600: '#3777A8',
-      700: '#2E638C',
-      800: '#244F70',
-      900: '#1B3C54',
+      50: '#edf6fc',
+      100: '#b9d7ed',
+      200: '#85b7dd',
+      300: '#5197cd',
+      400: '#3787c5',
+      500: '#1c77bd',
+      600: '#17629c',
+      700: '#124d7a',
+      800: '#0d3859',
+      900: '#082237',
     },
   },
 };

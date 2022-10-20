@@ -6,7 +6,7 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Header />
-      {/* <Destaques /> */}
+      <Destaques />
       <QuemSomos />
     </>
   );

@@ -24,8 +24,9 @@ export default function DesktopNavItem({
         borderColor={bordered ? 'primary.400' : 'transparent'}
         borderRadius="99rem"
         textTransform="uppercase"
-        fontSize="0.875rem"
-        fontWeight="bold"
+        fontFamily="Kontora"
+        fontSize="1rem"
+        fontWeight="800"
         padding="0.75rem 1.125rem"
         transition="all 0.2s ease"
         target={target || '_self'}

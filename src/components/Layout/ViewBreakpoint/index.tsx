@@ -5,7 +5,7 @@ export default function ViewBreakpoint(): JSX.Element {
 
   return dev ? (
     <Box position="fixed" bottom="2rem" right="2rem" zIndex={99}>
-      <Button size="sm" colorScheme="primary">
+      <Button size="sm" colorScheme="gray">
         <chakra.span display={{ base: 'none', sm: 'block', md: 'none' }}>
           sm
         </chakra.span>

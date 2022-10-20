@@ -59,7 +59,13 @@ export default function QuemSomos(): JSX.Element {
         position="relative"
       >
         <chakra.div position="relative">
-          <Heading as="h2" fontSize="1.875rem">
+          <Heading
+            as="h2"
+            fontSize="2rem"
+            textTransform="uppercase"
+            fontWeight="800"
+            color="primary.500"
+          >
             Quem somos
           </Heading>
           <Text fontSize={{ base: '1rem', lg: '1.125rem' }} mt="1.25rem">

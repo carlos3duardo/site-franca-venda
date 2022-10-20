@@ -2,6 +2,8 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ChakraProvider } from '@chakra-ui/react';
 
+import '../styles/fonts.css';
+
 import theme from '../styles/themes/default';
 import ViewBreakpoint from '../components/Layout/ViewBreakpoint';
 

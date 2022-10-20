@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Kontora';
+  src: url('/fonts/kontora-thin-webfont.woff2') format('woff2'),
+       url('/fonts/kontora-thin-webfont.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('/fonts/kontora-light-webfont.woff2') format('woff2'),
+       url('/fonts/kontora-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('/fonts/kontora-medium-webfont.woff2') format('woff2'),
+       url('/fonts/kontora-medium-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('/fonts/kontora-semi-bold-webfont.woff2') format('woff2'),
+       url('/fonts/kontora-semi-bold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('/fonts/kontora-bold-webfont.woff2') format('woff2'),
+       url('/fonts/kontora-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('/fonts/kontora-extrabold-webfont.woff2') format('woff2'),
+       url('/fonts/kontora-extrabold-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Kontora';
+  src: url('/fonts/kontora-extrablack-webfont.woff2') format('woff2'),
+       url('/fonts/kontora-extrablack-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+
+
+
+
+
+
+
