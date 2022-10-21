@@ -63,7 +63,7 @@ export default function QuemSomos(): JSX.Element {
             as="h2"
             fontSize="2.5rem"
             textTransform="uppercase"
-            fontWeight="800"
+            fontWeight="900"
             color="primary.500"
           >
             Quem somos
