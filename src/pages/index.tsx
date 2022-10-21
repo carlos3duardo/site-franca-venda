@@ -10,11 +10,11 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Header />
-      {/* <Destaques /> */}
-      {/* <QuemSomos /> */}
-      {/* <NossosProdutos /> */}
-      {/* <EscritoriVirtual /> */}
-      {/* <Valores /> */}
+      <Destaques />
+      <QuemSomos />
+      <NossosProdutos />
+      <EscritoriVirtual />
+      <Valores />
       <KitBasico />
     </>
   );
