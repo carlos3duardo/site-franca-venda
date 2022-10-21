@@ -3,6 +3,7 @@ import Destaques from '../components/Home/Destaques';
 import QuemSomos from '../components/Home/QuemSomos';
 import NossosProdutos from '../components/Home/NossosProdutos';
 import EscritoriVirtual from '../components/Home/EscritorioVirtual';
+import Valores from '../components/Home/Valores';
 
 export default function Home(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function Home(): JSX.Element {
       <QuemSomos />
       <NossosProdutos />
       <EscritoriVirtual />
+      <Valores />
     </>
   );
 }
