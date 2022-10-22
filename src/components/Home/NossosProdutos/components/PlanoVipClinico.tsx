@@ -1,4 +1,5 @@
 import { chakra, Flex, Heading, Text } from '@chakra-ui/react';
+import Button from '../../../Button';
 
 import imagemPlanoVip from '../assets/produto-plano-vip-clinico.png';
 
@@ -14,6 +15,7 @@ export default function PlanoVipClinico(): JSX.Element {
         width={{ base: '100%', md: '60%', lg: '50%' }}
         maxWidth={{ base: '100%', lg: '30rem' }}
         padding={{ base: '0 1rem', lg: '0' }}
+        textAlign={{ base: 'center', md: 'right' }}
       >
         <Heading
           as="h2"
@@ -21,12 +23,11 @@ export default function PlanoVipClinico(): JSX.Element {
           textTransform="uppercase"
           fontWeight="800"
           color="primary.500"
-          textAlign={{ base: 'center', md: 'right' }}
         >
           Plano Vip Clínico
         </Heading>
         <Text
-          fontSize={{ base: '1rem', lg: '1.125rem' }}
+          fontSize={{ base: '1.125rem', lg: '1.5rem' }}
           mt="1.25rem"
           textAlign={{ base: 'center', md: 'right' }}
         >
@@ -35,6 +36,16 @@ export default function PlanoVipClinico(): JSX.Element {
           quem busca cuidar do sorriso com segurança e cobertura clínica
           completa.
         </Text>
+
+        <chakra.div mt="2rem">
+          <Button
+            colorScheme="primary"
+            href="https://loja.dentalgold.com.br/Detalhe/1/Vip-Clinico"
+            target="_blank"
+          >
+            Saiba mais
+          </Button>
+        </chakra.div>
       </chakra.div>
 
       <chakra.figure

@@ -7,6 +7,7 @@ import circulosAmarelos from './assets/circulos-amarelos.png';
 export default function QuemSomos(): JSX.Element {
   return (
     <chakra.section
+      id="quem-somos"
       display="flex"
       flexDirection={{ base: 'column-reverse', md: 'row' }}
       alignItems={{ base: 'stretch', xl: 'center' }}
@@ -55,7 +56,7 @@ export default function QuemSomos(): JSX.Element {
       <chakra.div
         width={{ base: '100%', md: '60%', lg: '50%' }}
         maxWidth={{ base: '100%', lg: '40rem' }}
-        padding={{ base: '1.5rem 1.5rem' }}
+        padding={{ base: '3rem 1.5rem', lg: '3rem' }}
         position="relative"
       >
         <chakra.div position="relative">
@@ -68,12 +69,12 @@ export default function QuemSomos(): JSX.Element {
           >
             Quem somos
           </Heading>
-          <Text fontSize={{ base: '1rem', lg: '1.125rem' }} mt="1.25rem">
+          <Text mt="1.25rem" fontSize={{ base: '1.125rem', lg: '1.25rem' }}>
             A Franca Venda é uma plataforma de treinamentos que faz parte do
             Grupo Dental Gold com objetivo de preparar pessoas para ingressar no
             mundo empreendedor através das Vendas Diretas.
           </Text>
-          <Text fontSize={{ base: '1rem', lg: '1.125rem' }} mt="1.25rem">
+          <Text mt="1.25rem" fontSize={{ base: '1.125rem', lg: '1.25rem' }}>
             Disponibilizamos cursos e treinamentos com mentoria aplicada para o
             desenvolvimento pessoas em vendas em um segmento de amplo
             crescimento com plano de carreira e remuneração diferenciada, com

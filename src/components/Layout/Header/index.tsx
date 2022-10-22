@@ -45,7 +45,7 @@ const navItems: Array<NavItemProps> = [
   },
   {
     label: 'Login',
-    href: 'http://escritorio.dentalgold.com.br',
+    href: 'https://escritorio.dentalgold.com.br',
     icon: <HiOutlineLogin size={24} />,
     target: '_blank',
     bordered: true,

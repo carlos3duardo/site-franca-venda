@@ -5,8 +5,12 @@ import { extendTheme } from '@chakra-ui/react';
 const theme = {
   styles: {
     global: {
+      html: {
+        scrollBehavior: 'smooth',
+      },
       body: {
         backgroundColor: 'white',
+        fontSize: '1.125rem',
       },
       a: {
         color: '#428ac2',
@@ -14,7 +18,7 @@ const theme = {
     },
   },
   fonts: {
-    body: 'Inter, Helvetica, Arial, sans-serif',
+    body: 'Kontora, Helvetica, Arial, sans-serif',
     heading: 'Kontora, Helvetica, Arial, sans-serif',
     mono: 'monospace',
   },

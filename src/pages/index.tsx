@@ -2,7 +2,7 @@ import Header from '../components/Layout/Header';
 import Destaques from '../components/Home/Destaques';
 import QuemSomos from '../components/Home/QuemSomos';
 import NossosProdutos from '../components/Home/NossosProdutos';
-import EscritoriVirtual from '../components/Home/EscritorioVirtual';
+import EscritorioVirtual from '../components/Home/EscritorioVirtual';
 import Valores from '../components/Home/Valores';
 import KitBasico from '../components/Home/KitBasico';
 
@@ -13,7 +13,7 @@ export default function Home(): JSX.Element {
       <Destaques />
       <QuemSomos />
       <NossosProdutos />
-      <EscritoriVirtual />
+      <EscritorioVirtual />
       <Valores />
       <KitBasico />
     </>

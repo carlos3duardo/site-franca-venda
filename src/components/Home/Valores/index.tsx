@@ -69,6 +69,17 @@ const valores: Array<ValorProps> = [
 export default function Valores(): JSX.Element {
   return (
     <chakra.section padding="4rem 0">
+      <Heading
+        as="h2"
+        fontSize="2.5rem"
+        textTransform="uppercase"
+        fontWeight="900"
+        color="primary.500"
+        textAlign="center"
+        marginBottom="3rem"
+      >
+        Seu Próximo Negócio
+      </Heading>
       <Container padding={{ base: '1rem 1rem', xl: '1rem 0' }}>
         <chakra.div
           display="grid"

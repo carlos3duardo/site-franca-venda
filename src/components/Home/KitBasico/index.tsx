@@ -41,6 +41,7 @@ export default function KitBasico(): JSX.Element {
             justifyContent="center"
             width={{ base: '100%', lg: '60%' }}
             padding={{ base: '3rem 3rem', md: '5rem', lg: '3rem' }}
+            fontSize={{ base: '1.125rem', lg: '1.25rem' }}
           >
             <Box
               backgroundColor="primary.500"
@@ -94,7 +95,17 @@ export default function KitBasico(): JSX.Element {
                 justifyContent="center"
                 marginTop="2rem"
               >
-                <Button colorScheme="gray">Tenho interesse</Button>
+                <Button
+                  colorScheme="gray"
+                  href="https://escritorio.dentalgold.com.br/novo/dentalgold2"
+                  target="_blank"
+                  _hover={{
+                    backgroundColor: 'gray.100',
+                    color: 'primary.500',
+                  }}
+                >
+                  Tenho interesse
+                </Button>
               </chakra.div>
             </Box>
           </chakra.div>

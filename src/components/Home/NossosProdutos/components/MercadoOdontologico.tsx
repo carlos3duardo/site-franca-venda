@@ -27,7 +27,7 @@ export default function MercadoOdontologico(): JSX.Element {
           Mercado Odontológico
         </Heading>
         <Text
-          fontSize={{ base: '1rem', lg: '1.125rem' }}
+          fontSize={{ base: '1.125rem', lg: '1.5rem' }}
           mt="1.25rem"
           textAlign={{ base: 'center', md: 'right' }}
         >

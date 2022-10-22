@@ -7,6 +7,7 @@ import PlanoVipOrtodontico from './components/PlanoVipOrtodontico';
 export default function NossosProdutos(): JSX.Element {
   return (
     <chakra.section
+      id="produtos"
       display="flex"
       flexDirection="column"
       backgroundColor="white"
@@ -14,9 +15,9 @@ export default function NossosProdutos(): JSX.Element {
     >
       <Heading
         as="h2"
-        fontSize="2rem"
+        fontSize="2.5rem"
         textTransform="uppercase"
-        fontWeight="800"
+        fontWeight="900"
         color="primary.500"
         textAlign="center"
         padding="2rem 0 2rem 0"

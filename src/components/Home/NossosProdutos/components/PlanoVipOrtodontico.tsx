@@ -1,4 +1,5 @@
 import { chakra, Flex, Heading, Text } from '@chakra-ui/react';
+import Button from '../../../Button';
 
 import imagemPlanoOrtodontico from '../assets/produto-plano-vip-ortodontico.png';
 
@@ -27,7 +28,7 @@ export default function PlanoVipOrtodontico(): JSX.Element {
           Plano Vip Ortodôntico
         </Heading>
         <Text
-          fontSize={{ base: '1rem', lg: '1.125rem' }}
+          fontSize={{ base: '1.125rem', lg: '1.5rem' }}
           mt="1.25rem"
           textAlign={{ base: 'center', md: 'left' }}
         >
@@ -36,6 +37,15 @@ export default function PlanoVipOrtodontico(): JSX.Element {
           inclui o aparelho e manutenções. Ideal para quem busca cuidar do
           sorriso com ampla cobertura e manter o sorriso saudável.
         </Text>
+        <chakra.div mt="2rem">
+          <Button
+            colorScheme="primary"
+            href="https://loja.dentalgold.com.br/Detalhe/2/VipOrtodontico-102PlanoOrtodontico"
+            target="_blank"
+          >
+            Saiba mais
+          </Button>
+        </chakra.div>
       </chakra.div>
 
       <chakra.figure

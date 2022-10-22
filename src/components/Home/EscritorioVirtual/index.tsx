@@ -1,15 +1,16 @@
 import { chakra, Flex, Heading, Text } from '@chakra-ui/react';
+import Button from '../../Button';
 
 import mockupDispositivos from './assets/mockup-dispositivos.png';
 
-export default function EscritoriVirtual(): JSX.Element {
+export default function EscritorioVirtual(): JSX.Element {
   return (
-    <chakra.section padding="3rem 0" backgroundColor="#f7f7f7">
+    <chakra.section id="escritorio" padding="3rem 0" backgroundColor="#f7f7f7">
       <Heading
         as="h2"
-        fontSize="2rem"
+        fontSize="2.5rem"
         textTransform="uppercase"
-        fontWeight="800"
+        fontWeight="900"
         color="primary.500"
         textAlign="center"
         marginBottom="3rem"
@@ -32,13 +33,22 @@ export default function EscritoriVirtual(): JSX.Element {
         >
           <chakra.div position="relative">
             <Text
-              fontSize={{ base: '1rem', lg: '1.125rem' }}
+              fontSize={{ base: '1.125rem', lg: '1.5rem' }}
               mt="1.25rem"
               textAlign={{ base: 'center', md: 'left' }}
             >
               Acompanhe o seu negócio em tempo real com acesso a todas as
               ferramentas e materiais de apoio em todos os dispositivos.
             </Text>
+            <chakra.div mt="2rem">
+              <Button
+                colorScheme="primary"
+                href="https://escritorio.dentalgold.com.br"
+                target="_blank"
+              >
+                Acesse o escritório
+              </Button>
+            </chakra.div>
           </chakra.div>
         </chakra.div>
       </Flex>
