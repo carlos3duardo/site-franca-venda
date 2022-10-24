@@ -47,7 +47,7 @@ export default function Contato(): JSX.Element {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitted },
+    formState: { errors, isSubmitted },
     reset,
   } = useForm({
     resolver: yupResolver(formSchema),
