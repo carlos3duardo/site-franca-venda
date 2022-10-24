@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { chakra, Link } from '@chakra-ui/react';
+import Link from 'next/link';
+import { chakra } from '@chakra-ui/react';
 import {
   HiOutlineBriefcase,
   HiOutlineLogin,
@@ -8,11 +9,12 @@ import {
   HiOutlineUserGroup,
 } from 'react-icons/hi';
 import { ReactElement } from 'react';
-import Container from '../Container';
 
-import logoImage from '../../../assets/images/logo-header.png';
+import Container from '../Container';
 import DesktopNav from './components/DesktopNav';
 import MobileNav from './components/MobileNav';
+
+import logoImage from '../../../assets/images/logo-header.png';
 
 interface NavItemProps {
   label: string;
@@ -60,7 +62,7 @@ export default function Header(): JSX.Element {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Link href="/">
+        <Link href="/" passHref>
           <chakra.a>
             <Image src={logoImage} width={150} height={60} />
           </chakra.a>

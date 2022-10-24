@@ -1,4 +1,4 @@
-import { chakra, Show } from '@chakra-ui/react';
+import { chakra } from '@chakra-ui/react';
 import { ReactElement, useState } from 'react';
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
 import MobileNavItem from './MobileNavItem';
@@ -80,13 +80,11 @@ export default function MobileNav({ navItems }: MobileNavProps): JSX.Element {
   }
 
   return (
-    <Show below="lg">
-      <chakra.nav>
-        <NavigationButton menuToggle={() => menuToggle()} />
-        {isOpen && (
-          <NavigationMenu navItems={navItems} menuToggle={() => menuToggle()} />
-        )}
-      </chakra.nav>
-    </Show>
+    <chakra.nav display={{ base: 'block', lg: 'none' }}>
+      <NavigationButton menuToggle={() => menuToggle()} />
+      {isOpen && (
+        <NavigationMenu navItems={navItems} menuToggle={() => menuToggle()} />
+      )}
+    </chakra.nav>
   );
 }

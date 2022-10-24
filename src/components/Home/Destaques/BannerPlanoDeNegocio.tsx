@@ -1,4 +1,4 @@
-import { chakra, Show } from '@chakra-ui/react';
+import { chakra } from '@chakra-ui/react';
 
 import mobileImage from './assets/destaque-mobile-02-plano-de-negocio.png';
 import desktopImage from './assets/destaque-desktop-02-plano-de-negocio.png';
@@ -7,12 +7,12 @@ export default function BannerPlanoDeNegocio(): JSX.Element {
   return (
     <chakra.div>
       <chakra.a href="/">
-        <Show above="md">
+        <chakra.figure display={{ base: 'none', lg: 'block' }}>
           <chakra.img src={desktopImage} width="100%" />
-        </Show>
-        <Show below="md">
+        </chakra.figure>
+        <chakra.figure display={{ base: 'block', lg: 'hidden' }}>
           <chakra.img src={mobileImage} width="100%" />
-        </Show>
+        </chakra.figure>
       </chakra.a>
     </chakra.div>
   );

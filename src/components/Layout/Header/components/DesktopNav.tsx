@@ -1,4 +1,4 @@
-import { chakra, Show } from '@chakra-ui/react';
+import { chakra } from '@chakra-ui/react';
 import DesktopNavItem from './DesktopNavItem';
 
 type NavItemProps = {
@@ -14,25 +14,23 @@ interface DesktopNavProps {
 
 export default function DesktopNav({ navItems }: DesktopNavProps): JSX.Element {
   return (
-    <Show above="lg">
-      <chakra.ul
-        role="menu"
-        listStyleType="none"
-        margin="0"
-        display="flex"
-        flexDirection="row"
-      >
-        {navItems.map(navItem => (
-          <chakra.li key={navItem.href} mr="0.25rem">
-            <DesktopNavItem
-              label={navItem.label}
-              href={navItem.href}
-              target={navItem.target || '_self'}
-              bordered={navItem.bordered}
-            />
-          </chakra.li>
-        ))}
-      </chakra.ul>
-    </Show>
+    <chakra.ul
+      role="menu"
+      listStyleType="none"
+      margin="0"
+      display={{ base: 'none', lg: 'flex' }}
+      flexDirection="row"
+    >
+      {navItems.map(navItem => (
+        <chakra.li key={navItem.href} mr="0.25rem">
+          <DesktopNavItem
+            label={navItem.label}
+            href={navItem.href}
+            target={navItem.target || '_self'}
+            bordered={navItem.bordered}
+          />
+        </chakra.li>
+      ))}
+    </chakra.ul>
   );
 }

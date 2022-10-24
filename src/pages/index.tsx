@@ -5,6 +5,7 @@ import NossosProdutos from '../components/Home/NossosProdutos';
 import EscritorioVirtual from '../components/Home/EscritorioVirtual';
 import Valores from '../components/Home/Valores';
 import KitBasico from '../components/Home/KitBasico';
+import Contato from '../components/Layout/Contato';
 
 export default function Home(): JSX.Element {
   return (
@@ -16,6 +17,7 @@ export default function Home(): JSX.Element {
       <EscritorioVirtual />
       <Valores />
       <KitBasico />
+      <Contato />
     </>
   );
 }
