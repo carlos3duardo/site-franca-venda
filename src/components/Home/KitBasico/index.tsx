@@ -24,6 +24,7 @@ export default function KitBasico(): JSX.Element {
         left={{ base: '-60px', md: '-80px', xl: '-90px' }}
         width={{ base: '120px', md: '160px', xl: '180px' }}
         height={{ base: '75px', md: '100px', xl: '112px' }}
+        display={{ base: 'none', md: 'block' }}
       />
       <chakra.img
         src={bgCirculoAzulGrande}
@@ -40,7 +41,7 @@ export default function KitBasico(): JSX.Element {
             alignItems="center"
             justifyContent="center"
             width={{ base: '100%', lg: '60%' }}
-            padding={{ base: '3rem 3rem', md: '5rem', lg: '3rem' }}
+            padding={{ base: '2rem 0.5rem', md: '5rem', lg: '3rem' }}
             fontSize={{ base: '1.125rem', lg: '1.25rem' }}
           >
             <Box

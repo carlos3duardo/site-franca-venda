@@ -76,7 +76,7 @@ export default function QuemSomos(): JSX.Element {
           </Text>
           <Text mt="1.25rem" fontSize={{ base: '1.125rem', lg: '1.25rem' }}>
             Disponibilizamos cursos e treinamentos com mentoria aplicada para o
-            desenvolvimento pessoas em vendas em um segmento de amplo
+            desenvolvimento de pessoas em vendas em um segmento de amplo
             crescimento com plano de carreira e remuneração diferenciada, com
             suporte e apoio ao empreendedor.
           </Text>

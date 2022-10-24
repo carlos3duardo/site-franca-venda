@@ -8,23 +8,29 @@ import { fauna } from '../../services/faunadb';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    // await fauna.query(
-    //   q.Create(q.Collection('mensagens'), {
-    //     data: {
-    //       pagina: req.body.pagina,
-    //       nome: req.body.nome.toUpperCase(),
-    //       empresa: req.body.empresa.toUpperCase(),
-    //       email: req.body.email.toLowerCase(),
-    //       municipio: req.body.municipio.toUpperCase(),
-    //       uf: req.body.uf.toUpperCase(),
-    //       celular: req.body.celular,
-    //       createdAt: format(new Date(), 'yyyy-MM-dd HH:mm:ss', {
-    //         locale: ptBR,
-    //       }),
-    //     },
-    //   }),
-    // );
+    await fauna.query(
+      q.Create(q.Collection('mensagens'), {
+        data: {
+          pagina: req.body.pagina,
+          nome: req.body.nome.toUpperCase(),
+          email: req.body.email.toLowerCase(),
+          municipio: req.body.municipio.toUpperCase(),
+          uf: req.body.uf.toUpperCase(),
+          celular: req.body.celular,
+          createdAt: format(new Date(), 'yyyy-MM-dd HH:mm:ss', {
+            locale: ptBR,
+          }),
+        },
+      }),
+    );
+  } catch (err) {
+    return res.status(500).json({
+      message: 'Erro no FaunaDB.',
+      erro: err,
+    });
+  }
 
+  try {
     const mailjet = new Mailjet({
       apiKey: process.env.MJ_APIKEY_PUBLIC,
       apiSecret: process.env.MJ_APIKEY_PRIVATE,
@@ -48,7 +54,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           Subject: 'Franca Venda - Mensagem do site',
           Variables: {
             nome: req.body.nome.toUpperCase(),
-            empesa: req.body.empresa.toUpperCase(),
             email: req.body.email.toLowerCase(),
             municipio: req.body.municipio.toUpperCase(),
             uf: req.body.uf.toUpperCase(),
@@ -71,9 +76,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       data: req.body,
     });
   } catch (err) {
-    console.log(res);
     return res.status(500).json({
       message: 'Erro que não sei ainda.',
+      erro: err,
     });
   }
 };

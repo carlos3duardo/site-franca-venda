@@ -31,7 +31,7 @@ export default function PlanoVipClinico(): JSX.Element {
           mt="1.25rem"
           textAlign={{ base: 'center', md: 'right' }}
         >
-          Plano odontológico com cobertura para procedimentos, como
+          Plano odontológico com cobertura para procedimentos, como:
           restaurações, limpeza, canal, coroa, extração e muito mais. Ideal para
           quem busca cuidar do sorriso com segurança e cobertura clínica
           completa.

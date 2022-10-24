@@ -6,6 +6,7 @@ import EscritorioVirtual from '../components/Home/EscritorioVirtual';
 import Valores from '../components/Home/Valores';
 import KitBasico from '../components/Home/KitBasico';
 import Contato from '../components/Layout/Contato';
+import Footer from '../components/Layout/Footer';
 
 export default function Home(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ export default function Home(): JSX.Element {
       <Valores />
       <KitBasico />
       <Contato />
+      <Footer />
     </>
   );
 }

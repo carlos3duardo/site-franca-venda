@@ -47,7 +47,7 @@ export default function Contato(): JSX.Element {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: { errors, isSubmitting, isSubmitted },
     reset,
   } = useForm({
     resolver: yupResolver(formSchema),
@@ -114,7 +114,7 @@ export default function Contato(): JSX.Element {
               color="white"
               fontWeight="semibold"
             >
-              Preencha o formulário e entraremos em contato com você
+              Preencha o formulário que em breve retornaremos!
             </Text>
             <chakra.form
               marginTop="2rem"
@@ -173,7 +173,7 @@ export default function Contato(): JSX.Element {
                   />
                 </GridItem>
                 <GridItem gridColumnEnd={{ base: 'span 12', md: 'span 5' }}>
-                  <SubmitButton label="Enviar" isLoading={isSubmitting} />
+                  <SubmitButton label="Enviar" isLoading={isSubmitted} />
                 </GridItem>
               </Grid>
               <VStack spacing="1.25rem" />

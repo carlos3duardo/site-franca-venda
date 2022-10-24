@@ -32,10 +32,11 @@ export default function PlanoVipOrtodontico(): JSX.Element {
           mt="1.25rem"
           textAlign={{ base: 'center', md: 'left' }}
         >
-          Plano odontológico para procedimentos clínicos, como restaurações,
-          limpesa, canal, coroa, extração, bem como o tratamento ortodôntico que
-          inclui o aparelho e manutenções. Ideal para quem busca cuidar do
-          sorriso com ampla cobertura e manter o sorriso saudável.
+          Plano odontológico para tratamento de ortodôntico, que inclui a
+          aplicação de aparelho, manutenções e documentação ortodôntica, bem
+          como procedimentos clínicos, como: restaurações, limpeza, canal,
+          coroa, extração. Ideal para quem busca cuidar do sorriso com ampla
+          cobertura e manter-se seguro e saudável.
         </Text>
         <chakra.div mt="2rem">
           <Button
