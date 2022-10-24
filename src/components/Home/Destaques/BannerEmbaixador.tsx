@@ -6,7 +6,7 @@ import desktopImage from './assets/destaque-desktop-03-embaixador.png';
 export default function BannerEmbaixador(): JSX.Element {
   return (
     <chakra.div>
-      <chakra.a href="/">
+      <chakra.a href="/docs/APN.Franca.Venda.Oficial.2022.pdf" target="_blank">
         <chakra.figure display={{ base: 'none', lg: 'block' }}>
           <chakra.img src={desktopImage} width="100%" />
         </chakra.figure>
