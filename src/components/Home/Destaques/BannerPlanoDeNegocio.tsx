@@ -10,7 +10,7 @@ export default function BannerPlanoDeNegocio(): JSX.Element {
         <chakra.figure display={{ base: 'none', lg: 'block' }}>
           <chakra.img src={desktopImage} width="100%" />
         </chakra.figure>
-        <chakra.figure display={{ base: 'block', lg: 'hidden' }}>
+        <chakra.figure display={{ base: 'block', lg: 'none' }}>
           <chakra.img src={mobileImage} width="100%" />
         </chakra.figure>
       </chakra.a>
