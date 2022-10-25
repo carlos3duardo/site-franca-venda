@@ -98,7 +98,7 @@ export default function KitBasico(): JSX.Element {
               >
                 <Button
                   colorScheme="gray"
-                  href="https://escritorio.dentalgold.com.br/novo/dentalgold2"
+                  href="http://wa.me/5583991488317"
                   target="_blank"
                   _hover={{
                     backgroundColor: 'gray.100',
