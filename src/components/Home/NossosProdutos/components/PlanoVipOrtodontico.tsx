@@ -1,5 +1,5 @@
 import { chakra, Flex, Heading, Text } from '@chakra-ui/react';
-import Button from '../../../Button';
+// import Button from '../../../Button';
 
 import imagemPlanoOrtodontico from '../assets/produto-plano-vip-ortodontico.png';
 
@@ -38,7 +38,7 @@ export default function PlanoVipOrtodontico(): JSX.Element {
           coroa, extração. Ideal para quem busca cuidar do sorriso com ampla
           cobertura e manter-se seguro e saudável.
         </Text>
-        <chakra.div mt="2rem">
+        {/* <chakra.div mt="2rem">
           <Button
             colorScheme="primary"
             href="https://loja.dentalgold.com.br/Detalhe/2/VipOrtodontico-102PlanoOrtodontico"
@@ -46,7 +46,7 @@ export default function PlanoVipOrtodontico(): JSX.Element {
           >
             Saiba mais
           </Button>
-        </chakra.div>
+        </chakra.div> */}
       </chakra.div>
 
       <chakra.figure

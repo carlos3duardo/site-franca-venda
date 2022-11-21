@@ -1,5 +1,5 @@
 import { chakra, Flex, Heading, Text } from '@chakra-ui/react';
-import Button from '../../../Button';
+// import Button from '../../../Button';
 
 import imagemPlanoVip from '../assets/produto-plano-vip-clinico.png';
 
@@ -37,7 +37,7 @@ export default function PlanoVipClinico(): JSX.Element {
           completa.
         </Text>
 
-        <chakra.div mt="2rem">
+        {/* <chakra.div mt="2rem">
           <Button
             colorScheme="primary"
             href="https://loja.dentalgold.com.br/Detalhe/1/Vip-Clinico"
@@ -45,7 +45,7 @@ export default function PlanoVipClinico(): JSX.Element {
           >
             Saiba mais
           </Button>
-        </chakra.div>
+        </chakra.div> */}
       </chakra.div>
 
       <chakra.figure
